@@ -1,0 +1,141 @@
+main {
+  height: 110vh;
+}
+.signin {
+  background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.568)),
+    url(./IN-en-20210607-popsignuptwoweeks-perspective_alpha_website_large.jpg)
+      center/cover no-repeat fixed;
+}
+.logo_sign {
+  object-fit: contain;
+  display: block;
+  width: 167px;
+  height: 45px;
+}
+.signin_header {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  padding-left: 3vw;
+}
+form {
+  display: flex;
+  width: 314px;
+  justify-content: space-around;
+  flex-direction: column;
+  color: white;
+}
+.form_big {
+  display: flex;
+  justify-content: center;
+}
+.form_container {
+  min-width: 450px;
+  /* min-height: 660px; */
+  min-height: 500px;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+}
+.form_heading {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  align-self: left;
+}
+.input_area {
+  border-radius: 4px;
+  width: 100%;
+  border: 0;
+  outline-width: 0;
+  /* color: #fff; */
+  /* background-color: #333; */
+  height: 50px;
+  line-height: 50px;
+  padding: 16px 20px 0;
+}
+label {
+  margin-bottom: 20px;
+}
+form > button {
+  padding: 16px 20px;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  background-color: #e50914;
+  font-weight: 600;
+}
+.need_more {
+  display: inline;
+  text-align: end;
+}
+.form_end {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .form_container {
+    min-width: 100%;
+  }
+  form {
+    min-width: none;
+  }
+}
+.footer_class {
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+  padding-top: 1.5%;
+  padding-bottom: 4%;
+  color: #757575;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.footer_class > h4 {
+  margin-bottom: 3rem;
+  font-weight: 200;
+}
+.footer_class > ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: left;
+  row-gap: 1rem;
+  text-decoration: none;
+  list-style: none;
+  font-size: 13px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.footer_class > ul > li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.ui-select {
+  margin-top: 3rem;
+  background-color: black;
+  border: 1px solid #333;
+  color: #757575;
+  padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .footer_class {
+    padding-left: 6%;
+    padding-top: 3%;
+  }
+  .footer_class > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer_class {
+    padding-left: 6%;
+    padding-top: 3%;
+  }
+  .footer_class > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
